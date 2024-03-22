@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <input type="text" placeholder="Enter" name id="inpt">
+        <button type="submit" onclick="contain2to4()">Click</button>
+        <h2 id="print"></h2>
+
+        <script>
+    
+
+
+const countChars = (str, char) => str.split('').filter(ch => ch === char).length;
+
+const contain2to4 = (char) => {
+    let input = document.getElementById("inpt").value;
+    let result = countChars(input, 'o') <= 5;
+    document.getElementById("print").innerHTML = result;
+} 
+
+
+
+
+// const countChars = (str, char) => str.split('').filter(ch => ch === char).length;
+
+// const contain2to4 = (str, char) => countChars(str, char) <= 2 ;
+
+// document.writeln(contain2to4('oo', 'o')); 
+// document.write(contain2to4('ooo', 'o')); 
+    </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- // the code generates an array of numbers from 1 to 6 using createArrayOfNumber function, then it counts how many of these numbers are even using the counteven function, and finally, it writes that count onto the document. -->
+
+
+    <script>
+        const counteven = (arr) => arr.filter(num => num % 3 === 0).length;
+        const createArrayOfNumber = (num) =>{
+            const returnArray = [];
+            for(let i = 1; i <= num ;i+= 1){
+                returnArray.push(i)
+            }
+            return returnArray;
+        }
+        document.write(counteven(createArrayOfNumber(7)));
+    </script>
+</body>
+</html>

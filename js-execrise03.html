@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moveforward</title>
+</head>
+<body>
+
+    <!-- <input type="text" id="inpt" placeholder="enter something">
+    <button type="submit" onclick="Moveforward()" >click</button>
+    <h3 id="print"></h3>
+    <script>
+       const Moveforward = () =>
+       {
+           let input = document.getElementById("inpt").value;
+           let result = input.split('').map(char => String.fromCharCode(char.charCodeAt(0) + 1)).join('');
+           document.getElementById("print").innerHTML = result
+       }
+
+    </script> -->
+
+
+    <!--  -->
+
+ <script>
+
+       const Moveforward = (str) => str.split('').map(char => String.fromCharCode(char.charCodeAt(0)+1))
+       .join('')
+       document.write(Moveforward("abcd"))
+
+    </script> 
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- (100 - a) calculates how far a is from 100.
+    (100 - b) calculates how far b is from 100. -->
+
+    <input type="number" placeholder="Enter" name="" id="inpt">
+    <input type="number" placeholder="Enter" name="" id="inpt1">
+    <button type="submit" onclick="closeto100()">Click</button>
+    <h4 id="print"></h4>
+
+    
+   <script>
+       const closeto100 = ()  => {
+           let input = document.getElementById("inpt").value;
+           let input1 = document.getElementById("inpt1").value;
+           let result = (100 - input) < (100 - input1) ? input:input1 ;
+           document.getElementById("print").innerHTML = result + " is close to 100 ";
+
+       };
+       
+       
+    //    const closeto100 = (a,b)  => (100 - a) < (100 - b) ? a : b;
+    //    document.write(closeto100(99,98))
+   </script>   
+</body>
+</html>

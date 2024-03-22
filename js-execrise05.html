@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" placeholder="Enter " name="" id="inpt">
+    <button type="submit" onclick="addnew()">Click</button>
+    <h4 id="print"></h4>
+
+
+    <script>
+        const addnew = () => {
+            let input = document.getElementById("inpt").value;
+            let result = input.indexOf('Welcome') === 0 ? input:`Welcome ${input}` ;
+            document.getElementById("print").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
